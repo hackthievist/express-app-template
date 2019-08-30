@@ -63,7 +63,7 @@ docker-compose logs -f
 * run tests
 
 ```shell
-docker-compose run --rm fixtures-api_web yarn test
+docker-compose run --rm ${docker container name} yarn test
 ```
 
 * tear down
