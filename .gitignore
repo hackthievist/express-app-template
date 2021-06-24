@@ -6,6 +6,3 @@ node_modules
 secrets.env
 config.env
 
-# log files
-yarn-error.log
-
