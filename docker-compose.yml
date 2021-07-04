@@ -1,7 +1,7 @@
 version: "2"
 services:
   api:
-    container_name: sterling-fixtures
+    container_name: express-app-template
     restart: always
     build: .
     env_file:

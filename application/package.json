@@ -32,9 +32,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint",
-      "pre-push": "yarn test"
+      "pre-commit": "npm lint",
+      "pre-push": "npm test"
     }
+  },
+  "engines": {
+    "node": "14.0.0"
   },
   "author": "Ifeoluwa Sobogun [sobogunifeoluwa@gmail.com]"
 }

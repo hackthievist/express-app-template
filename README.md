@@ -13,10 +13,10 @@ These instructions are for use without docker
 
 * Clone the repository [https://github.com/${username}/${repository}.git](https://github.com/${username}/${repository}.git)
 * Make sure that [Node.js](https://nodejs.org/) is installed.
-* Install Node.js modules with `yarn` [YarnPKG](https://yarnpkg.com/):
+* Install Node.js modules with `npm` [NPM](https://www.npmjs.com/):
 
 ```shell
-yarn install
+npm install
 ```
 
 ## Documentation
@@ -26,10 +26,10 @@ yarn install
 ## Starting App
 
 * To run the app, copy the file `.env.example` to `.env` and substitute the settings to match your development environment.
-* Start the app with `yarn`:
+* Start the app with `npm`:
 
 ```shell
-yarn start
+npm start
 ```
 
 * Navigate to [localhost:3000](http://localhost:3000). Please note `3000` is the default port used, you can change this in `.env`.
@@ -38,17 +38,17 @@ yarn start
 
 * Tests are written using the [Mocha](https://mochajs.org/) library.
 
-* To run tests with `yarn` use:
+* To run tests with `npm` use:
 
 ```shell
-yarn test
+npm test
 ```
 
 ## Docker
 
 ### Using Docker Standalone - Compose (Recomended for local development)
 
-* Copy the files `docker/secrets.env.example`, `docker/config.env.example` to `docker/secrets.env`, `docker/config.env` and substitute the settings to match your development environment.
+* Copy the files `secrets.env.example`, `config.env.example` to `secrets.env`, `config.env` and substitute the settings to match your development environment.
 
 ```shell
 docker-compose up -d
@@ -63,7 +63,7 @@ docker-compose logs -f
 * run tests
 
 ```shell
-docker-compose run --rm ${docker container name} yarn test
+docker-compose run --rm ${docker container name} npm test
 ```
 
 * tear down
